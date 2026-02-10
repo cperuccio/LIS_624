@@ -1,14 +1,17 @@
 # LIS_624
 Systems Librarianship
 
-## Testing!
+## 2026-02-09 - Systems Librarianship
 
-Let's see if I can get this one working.
+Goal: To understand how GitHub works
+Context: I'm taking the LIS 624 class with Dr. Burns. 
+Steps: I'm listening to the lecture as I work.
+Results: TBD
+Verification: TBD
+Notes:
 
-## I'm editing this from nano.
+## 2026-02-10 - An update
 
-Let's see how it goes! 
+I'm still not sure what happened with my last repository, so I've created a new one.
 
-## Success!
 
-I'm going to use this as my repository.
