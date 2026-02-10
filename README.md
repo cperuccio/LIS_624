@@ -17,12 +17,12 @@ Verification: I see the update in GitHub.
 
 I still can't figure out why ssh authentication kept failing for my first repository, so I've created a new one. As a reminder, here are the commands to use in order to push changes from my text editor to this repository:
 
-* `git add name_of_entry.nd`
+* `git add name_of_entry.md`
 * `git commit -m "commit message here"`
 * `git push origin main`
 * `git status`
 
-## Module 2: Check-In (2026-02-10):
+## 2026-02-10 -  Module 2 Check-In
 
 Here's how I'm using my repository so far:
 
