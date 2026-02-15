@@ -29,3 +29,27 @@ Here's how I'm using my repository so far:
 * To take note of commands I'll return to
 * To document my progress throughout the course
 * To make changes/edits in nano and to check how they would appear if published on GitHub 
+
+## 2026-02-16 - Searching with grep (5)
+
+grep commands to return to:
+
+`grep "example" file_name.csv` = search for the string in quotation marks
+
+`grep -i "example" file_name.csv` = -i ignores the case of the search string
+
+`grep -vi "example" file_name.csv` = -vi searches for lines that don't match the exact string (called inverse matching). -i is added to ignore the case
+
+`^` = indicates the start of a line, ergo 
+
+`grep -vi "^example" file_name.csv` = searches for lines that don't match the string in quotation marks at the start of a line
+
+`$` = indicates the end of a line, etgo
+
+`grep -vi "example$" file_name.csv` = returns lines that don't end with the string in quotations
+
+`c` = count of matching lines
+
+`ic` = case insenstive count of marching lines
+
+To be continued
