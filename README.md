@@ -53,3 +53,11 @@ grep commands to return to:
 `ic` = case insenstive count of marching lines
 
 To be continued
+
+##2026-02-23 - Managing Software (6)
+
+The `sudo` command modifies files, creates directories, and performs maintenance tasks needed to install and manage software.
+
+`sudo apt update` = compares the software that's available to what's installed on my system
+* When a piece of software is available to be updated, run the `sudo apt upgrade` command
+
