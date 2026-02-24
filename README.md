@@ -54,7 +54,7 @@ grep commands to return to:
 
 To be continued
 
-##2026-02-23 - Managing Software (6)
+## 2026-02-23 - Managing Software (6)
 
 The `sudo` command modifies files, creates directories, and performs maintenance tasks needed to install and manage software.
 
