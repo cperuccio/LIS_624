@@ -74,3 +74,19 @@ To run the YAZ program: `yaz-client`
 *	With this interface, I can run the `open` command to connect to a library OPAC or discovery service using the server address
 *	`Z> open saalck-uky.alma.exlibrisgroup.com:1921/01SAA_UKY`
 
+### Queries
+
+Prefix Query Format (PQF)
+
+* `find` sends a search request (also can be abbreviated as `f`
+* After command, use an operator to do a Booelean search of the next two attributes (e.g., `Z> f @and` `Z> f @or`)
+* Use `@attr 1=attribute` 
+* Here are examples of searches I constructe with PQF:
+	* `f @attr 1=1 "batuman, elif"`
+	* `f @and @attr 1=31 "2026" @attr 1=21 "artificial intelligence"`
+* For a list of attributes, see [Library of Congress](https://www.loc.gov/z3950/agency/defns/bib1.html)
+
+## Module 3: Check-In
+
+I'm using my repository to remember commands that I return to often. For example, I haven't yet memorized the four commands to push changes from my text editor to my repo, but my 2026-02-10 entry provides the commands for easy reference.
+
