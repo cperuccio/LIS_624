@@ -54,10 +54,23 @@ grep commands to return to:
 
 To be continued
 
-## 2026-02-23 - Managing Software (6)
+## 2026-02-23 - Managing Software (5)
 
 The `sudo` command modifies files, creates directories, and performs maintenance tasks needed to install and manage software.
 
 `sudo apt update` = compares the software that's available to what's installed on my system
 * When a piece of software is available to be updated, run the `sudo apt upgrade` command
+
+## 2026-02-23 - Library Search (6)
+
+To search for a software to install: `apt search name of software`
+* For YAZ: `apt search yaz`
+* Before automatically installing whatever comes up, run `apt show name of software` to get information about the program 
+* To complete the installation: `sudo apt install name of command`
+*	For class: `sudo apt install yaz`
+
+To run the YAZ program: `yaz-client`
+* A new command line interface appears: `Z>`
+*	With this interface, I can run the `open` command to connect to a library OPAC or discovery service using the server address
+*	`Z> open saalck-uky.alma.exlibrisgroup.com:1921/01SAA_UKY`
 
