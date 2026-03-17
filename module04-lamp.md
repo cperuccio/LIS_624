@@ -29,9 +29,11 @@ The LAMP stack is commonly used because the four components are open-source and 
 3. If Apache is running, then check that PHP has been successfully installed to work with Apache. To do this, change to Apache's document root directory: `cd /var/www/html/`
 4. Then create a `.php` file: `sudo nano info.php`
 	1. Add text to the file: 
-	```<?php	
-	phpinfo();
-	?>```
+```
+<?php	
+phpinfo();
+?>
+```
 5. If PHP is working with Apache as it should, test your public IP address with `info.php` added to the end of the IP address url.
 	1. Delete that file after the test (security reasons): `sudo rm /var/www/html/info.php`
 6. The URL of the IP address will default to the file, `index.html`. But if you want to provide PHP to Apache, then you want Apache to display `index.php` as the default. Here's how:
@@ -69,12 +71,14 @@ The LAMP stack is commonly used because the four components are open-source and 
 		5. `$db_password = "XXXXXXXXX";`: note the password created during step 4.
 		6. `?>`
 		7. As full code
-		```<?php // login.php
+```
+<?php // login.php
 $db_hostname = "localhost";
 $db_database = "opacdb";
 $db_username = "opacuser";
 $db_password = "XXXXXXXXX";
-?>```
+?>
+```
 9. Next create a PHP file in the Apache root. 
 	1. First change to the apache root: `cd /var/www/html`.
 	2. Create a file in this root that interact with the database you created in step 5.
