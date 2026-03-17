@@ -39,13 +39,14 @@ MySQL is a relational database. A relational database organizes data into tables
 4. Switch to the new database: `use opacdb;`
 6. Run this:
 
-> create table books (
-	>>  id int unsigned not null auto_increment,
-	>>  author varchar(150) not null,
-	>>  title varchar(150) not null,
-	>>  copyright year not null,
-	>>  primary key (id)
->);
+```
+create table books (
+id int unsigned not null auto_increment,
+author varchar(150) not null,
+title varchar(150) not null,
+copyright year not null,
+ primary key (id)
+```
 
 7. You've now created a new table called books. Open it in this way: `show tables;` and then `describe books;`
 
