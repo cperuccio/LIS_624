@@ -48,7 +48,9 @@ insert into books
 4. You can also delete a user account: `mysql> drop user 'name_of_user'@'localhost';`
 
 ## Creating a Bare Bones OPAC
-An ILS is essentially built on dozens of interconnecting tables. The OPAC we create this week allows user to retrieve the data we entered into our database (opacdb). Here's how.
+An OPAC (Online Public Access Catalog) is essentailly a database of bibliographic records that describe the materials in a particular library system. This means that an ILS (the non-patron facing database) feeds information directly for users to see and search in the OPAC. For this class, our ILS is our opacdb relational database; our OPAC is mylibrary.html and connects through PHP to our MySQL relatinal database (opacdb).
+
+ The OPAC we create this week allows user to retrieve the data we entered into our database (opacdb). Here's how.
 
 1. Change the directory to the Apache document root: `cd /var/www/html/`
 2. Create an html page in the text editor: `sudo nano mylibrary.html`. Based on the provided code, this HTML page contains a form for searching the OPAC. When someone submits the button on the form, the form activates `search.php`. This PHP script connects to our relational database (opacdb) and contains a query to search the **books** table specifically.
@@ -108,4 +110,3 @@ AuthUserFile /etc/apache2/.htpasswd
 Require valid-user
 ```
 8. Note what's happening here: We're specifying that authorization is required (via htpasswd, specifically!) to request access for the information in our new cataloging directory.
-
