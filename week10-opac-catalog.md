@@ -38,7 +38,7 @@ If I want to add more records to by **books** table in my opacdb database, here'
 insert into books
 (author, title, publisher, copyright) values
 ```
-	1. Note: copyright value is listed as YYY-MM-DD 
+3.  Note: copyright value is listed as YYY-MM-DD 
 
 ### Database management
 
@@ -60,7 +60,7 @@ An ILS is essentially built on dozens of interconnecting tables. The OPAC we cre
 // Load MySQL credentials
 require_once 'var/www/login.php`;
 ```
-	1. We created `login.php` file last week (see week09-mysql.md in this repository)
+5. We created `login.php` file last week (see week09-mysql.md in this repository)
 
 ## Creating a Bare Bones Cataloging Module
 While we've added records to our opacdb using the MYSQL commandline, this bare-bones catalogiing module will provide a graphical interface for adding records.
@@ -74,10 +74,10 @@ sudo mkdir cataloging
 ```cd cataloging
 sudo nano index.html
 ```
-	1. In the file, note that the form references a PHP file that we will create:
+4.  In the file, note that the form references a PHP file that we will create:
 `<form action="insert.php" method="post">`
-	2.  Also note that the HTML form matches the data structure of our books table (e.g., book title, publisher, copyright, etc.)
-5. Indeed, we need to create the PHP file! The PHP file will allow us communicate information from our form (`index.html`) to our relational database!
+5.  Also note that the HTML form matches the data structure of our books table (e.g., book title, publisher, copyright, etc.)
+6. Indeed, we need to create the PHP file! The PHP file will allow us communicate information from our form (`index.html`) to our relational database!
 	1. `sudo nano insert.php` from the cataloging directory
 	2. Add provided script
 	3. Notice the provided authentication script!
@@ -98,14 +98,14 @@ The HTML and PHP files we just created allow us to enter data into opacdb from a
   Require all granted
 </Directory>
 ```
-	1. Notice that this names the new directory we made earlier `/var/www/html/cataloging`
-5. Change to the cataloging directory and create a file: `sudo nano .htaccess`
-6. Add this:
+5.  Notice that this names the new directory we made earlier `/var/www/html/cataloging`
+6.  Change to the cataloging directory and create a file: `sudo nano .htaccess`
+7. Add this:
 ```
 AuthType Basic
 AuthName "Authorization Required"
 AuthUserFile /etc/apache2/.htpasswd
 Require valid-user
 ```
-	1. Note what's happening here: We're specifying that authorization is required (via htpasswd, specifically!) to request access for the information in our new cataloging directory.
+8. Note what's happening here: We're specifying that authorization is required (via htpasswd, specifically!) to request access for the information in our new cataloging directory.
 
