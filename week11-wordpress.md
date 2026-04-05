@@ -51,5 +51,7 @@ You guessed it! We need to set up PHP to connect our new relational database in 
 ## Accessing the new install
 
 1. Visit my IP address /wordpress: [my site](http://34.173.121.182/wordpress/)
-2. I named my sate, entered my a new username and password (NOT the username and password I used to create the wordpress database).
+2. I named my site, entered my a new username and password (NOT the username and password I used to create the wordpress database).
 3. Woohoo! I'm in WordPress! Time to set it up.
+4. If I want to access the web admin in the future: [WP admin](http://34.173.121.182/wordpress/wp-admin/)
+
