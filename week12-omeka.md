@@ -1,7 +1,7 @@
 # Omeka Installation
 Date: Friday, April 10, 2026
 
-Omkea is an open-source platform for creating digital collections. Here's how I installed it.
+Omeka is an open-source platform for creating digital collections. Here's how I installed it.
 
 ## Installation instructions & troubleshooting
 
@@ -36,13 +36,13 @@ Omkea is an open-source platform for creating digital collections. Here's how I 
 	4. dbname   = "omeka"
 	5. I didn't change the final three (prefix, charset, ;port)
 7. I used the `chown` command to give Apache file access (`sudo chmod -R g+w*`), and I restarted Apache.
-	1. I didn't run the `chmod` at this time, which might have caused me some problems later~
+	1. I didn't run the `chmod` at this time, which might have caused me some problems later...
 8. The moment of truth: I went to [my site](http://34.173.121.182/omeka/), and... I saw an error message:
 	1. "Omeka Installation Error. Mod_rewrite is not enabled. Apache’s mod_rewrite extension must be enabled for Omeka to work properly. Please enable mod_rewrite and try again." The troubleshooting begins!
 
 ### Troubleshooting
 
-Before I document how I troubleshot this issue, I'll note that there something pretty exciting about the troubleshooting process. I know that there *has* to be an answer, and I just need to figure it out! I have more of a humanities background where so much of my tasks are interpretive. There was something really exciting about running into an issue, trying a few options, and finally seeing the success of my efforts!
+Before I document how I troubleshot this issue, I'll note that there something pretty exciting about the troubleshooting process. I know that there *has* to be an answer, and I just need to figure it out! I have more of a humanities background where so many of my tasks are interpretive. There was something really exciting about running into an issue, trying a few options, and finally seeing the success of my efforts!
 
 1. The error message confused me because I *already* enabled Mod_rewrite. I figured I'd try running it again (`sudo a2enmod rewrite`). As excpected, I received a message that said "Rewrite already enabled." I restarted Apache again and visited the website, but still no luck.
 2. This is when I realized I didn't run the `chown` command (`sudo chown :www-data /var/www/html`). I remembered this command from our installation of the cataloging module.
@@ -66,7 +66,7 @@ Before I document how I troubleshot this issue, I'll note that there something p
 			1. Success!
 
 ## Reflection
-This was the most troubleshooting I’ve done in the course so far. I acknowledge that I would have never solved this without advice from other people online, but now I think that I could help someone if they ran into these issues. 
+This was the most troubleshooting I’ve done in the course so far. I acknowledge that I would have never solved this without advice from other people online, but now I think that I could help someone if they ran into these issues.  
 
 On another note, I haven’t had the time to sort through what the issue is with adding images to my WordPress site. I will definitely get there—this week has proven that time, perseverance, and the internet can help me figure things out—but I’ll likely get there on Sunday evening (Sunday, April 12). (I have to travel to a wedding in a couple hours!) Stay tuned!
 
