@@ -1,9 +1,9 @@
-#Koha Installation
+# Koha Installation
 Date: Tuesday, April 21, 2026
 
 Koha is a free, open-source ILS used around the world, mostly at small or medium libraries. Here's how I installed it.
 
-##Installation instructions
+## Installation instructions
 
 1. I created a new VM through google cloud.
 	1. Set machine configuration to e2-medium (2 vCPU, 1 core, 4 GB)
@@ -15,7 +15,7 @@ Koha is a free, open-source ILS used around the world, mostly at small or medium
 	5. Created two firewall rules to open internet traffic to two ports
 		1. Under VPC network and then Firewall, selected “Create a firewall rule” and added koha-staff-8080. 
 		2. Created a second firewall: koha-opac 8081
-		3. These ports matched the network tags I created in step 1d. 
+		3. These ports matched the network tags I created in step 1v. 
 		4. Source IPv4 ranges set to 0.0.0.0/0 to allow access from anywhere/any IP address.
 2. I prepared my VM for installation.
 	1. I updated my system.
@@ -35,7 +35,8 @@ Components: main
 Signed-By: /etc/apt/keyrings/koha.asc
 EOF
 ```
-	5. I exited the Linux root user through the `exit` command.
+
+	5.  I exited the Linux root user through the `exit` command.
 3. I installed MariaDB, which is a relational database that works a lot like MySQL:`sudo apt update` then `sudo apt install mariadb-server`
 4. I installed the Koha ILS:
 	1. `sudo apt update`
@@ -83,5 +84,5 @@ I tried a few different techniques I saw online to fix the 404 issue on the WP-a
 
 Confused, I decided to create brand new VMs for both Koha and for Omeka/Wordpress on Sunday. The installs worked fine again, but I’m a little disappointed in myself for not having parsed what caused the issues in the first place. 
 
-As I write this on Tuesday, April 21, I am once again unable to access my Koha site, even though I reinstalled on Sunday and it worked well! Luckily I’m not running in to the same issue with the wp-admin account.
+As I write this on Tuesday, April 21, I am once again unable to access my Koha site, even though I reinstalled it again on Sunday and it worked well! Luckily I’m not running in to the same issue with the wp-admin account. Will try to figure this one out.
 
