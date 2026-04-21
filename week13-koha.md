@@ -86,3 +86,10 @@ Confused, I decided to create brand new VMs for both Koha and for Omeka/Wordpres
 
 As I write this on Tuesday, April 21, I am once again unable to access my Koha site, even though I reinstalled it again on Sunday and it worked well! Luckily I’m not running in to the same issue with the wp-admin account. Will try to figure this one out.
 
+### I've learned an important lesson!
+
+Instead of doing something drastic (e.g., let me create an entirely new VM to donwload Koha AGAIN), go back to basics. This issue was pretty eaily resolved.
+1. In my Koha VM, I ran `sudo systemctl status apache2`. Turns out, I saw there was a failure! (apache2.service: Failed with result 'exit-code'). I opened the error log—I learned how to do that [here](https://orcacore.com/apache2-service-failed-with-result-exit-code/). This essentially confirmed the same things. There were problems with the exiting.
+2. I tried restarting Apache2 just to see if that would fix this. (`sudo systemctl restart apache2`). Lo and behold, that worked!
+
+I present, my koha opac: http://34.171.63.84:8081/
